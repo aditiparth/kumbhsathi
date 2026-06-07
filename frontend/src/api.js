@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API = axios.create({ baseURL: "http://localhost:8000" });
+const API = axios.create({ baseURL: "https://kumbhsathi-1.onrender.com" });
 
 export const sendChat = (message, history, lang) =>
   API.post("/chat", { message, history, lang });
